@@ -1,5 +1,5 @@
 # CRÔNICAS DE UM MALANDRO
-Desenvolvido por Andrée, @Dom-Henrique, @RalphDive, Ronaldy e @julionhagajuelson-hue, este projeto destinado à avaliação do nosso professor orientador Me. @diogomoreira possui como objetivo apresentar um pouco do universo da trama Crônicas De Um Malandro, obra autoral de Dom Henrique, roteirista iniciante.
+Desenvolvido por Andrée, Dom Henrique, Raul Alves, Ronaldy dos Santos e Zerson, este projeto destinado à avaliação do nosso professor orientador Me. Diogo Moreira possui como objetivo apresentar um pouco do universo da trama **Crônicas De Um Malandro**, obra autoral de Dom Henrique, roteirista iniciante.
 
 ## PLANEJAMENTO
 **ENREDO:**
