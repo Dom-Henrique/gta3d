@@ -1,23 +1,15 @@
-# CRÔNICAS DE UM MALANDRO
-Desenvolvido por Andrée, Dom Henrique, Raul Alves, Ronaldy dos Santos e Zerson, este projeto destinado à avaliação do nosso professor orientador Me. Diogo Moreira possui como objetivo apresentar um pouco do universo da trama **Crônicas De Um Malandro**, obra autoral de Dom Henrique, roteirista iniciante.
+# ROCKSTAR 3D UNIVERSE
+I don't meet you, but i suppose that you know Rockstar Games, right? Well, me and my team - Andrée, Raul, Ronaldy and Zerson - decided that make a website about the awesome 3D GTA universe to Mark Languages Semesther.
 
-## PLANEJAMENTO
-**ENREDO:**
+## The Universe
+3D GTA universe are composed by:
+- Grand Theft Auto: III
+- Grand Theft Auto: Vice City
+- Manhunt
+- Grand Theft Auto: San Andreas
+- Bully
+- Grand Theft Auto: Liberty City Stories
+- Grand Theft Auto: Vice City Stories
+- Manhunt 2
 
-
-Acompanhamos através do relato de Bella Menezes, estudante de literatura da Universidade de Coimbra em 1947, o seu relacionamento com João Sousa, estudante do curso de economia da mesma universidade que logo a desperta curiosidade. Misterioso por seu tom de pele mais bronzeado e cabelos negros e ondulados, o rapaz de 22 anos trabalha como alfaiate à tarde. Bella descobre que por baixo daquela pele parda havia uma persona que saía noites sim noites não: Dominique.
-
-**CONSTRUÇÃO DE UNIVERSO**
-
-Após a 2° Guerra Mundial a Europa e alguns países da América viveram períodos de governos autoritários que utilizavam do rádio como meios de propaganda. Enquanto o Brasil possuía [Getúlio Vargas](https://pt.wikipedia.org/wiki/Get%C3%BAlio_Vargas), seu pai, Portugal, era controlado por [António Salazar](https://pt.wikipedia.org/wiki/Ant%C3%B3nio_de_Oliveira_Salazar) e seus apoiadores na recém formada república portuguesa.
-
-A 2° ascenção da máfia italiana deu-se após a queda de [Benito Mussolini](https://it.wikipedia.org/wiki/Benito_Mussolini) pelos americanos e a libertação de membros gângsters que foram presos pelo regime italiano. Referenciada em diversas obras como O Poderoso Chefão e Grand Theft Auto: III, tornou-se reconhecida por seu jeito discreto e elegante de agir no mundo do crime.
-
-## PÚBLICO INTERESSADO
-Brasileiros, portugueses, povos indígenas, amantes de histórias sobre a máfia italiana e tramas de época.
-
-## INSPIRAÇÕES
-- O Poderoso Chefão
-- Nos Tempos do Imperador
-- Peaky Blinders
-- Novo Mundo
+But in this project we talk about GTA III, VC, SA and Bully. We don't forgotted Manhunt. This game is VERY violent, so show this content into college... Is not cool.
