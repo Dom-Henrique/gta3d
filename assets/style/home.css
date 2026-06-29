@@ -7,25 +7,47 @@
 }
 body{
     background-color: var(--pri);
+    overflow: hidden;
     color: var(--text);
+    width: 100vh;
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 ul{
     display: grid;
-    grid-template-columns: 50% auto;
-    row-gap: 100px;
+    grid-template-columns: 550px 4fr 4fr;
+    row-gap: 50px;
+    width: fit-content;
+    margin: 0 auto;
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+    width: fit-content;
 }
 img{
+    width: 350px;
+    height: 350px;
+    transition: .4s;
+    border-radius: 40px
+}
+div{
     width: 400px;
     height: 400px;
-    transition: .4s;
 }
 img:hover{
     transform: scale(1.1);
     cursor: pointer;
     transition: .4s;
     backdrop-filter: drop-shadow(10px 10px 10px red);
+}
+.gtavc{
+    object-fit: cover;
+    object-position: center;
 }
