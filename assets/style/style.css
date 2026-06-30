@@ -26,21 +26,25 @@ body {
 .menu ul {
     display: flex;
     gap: 30px;
+    margin-right: 20px;
 }
 
 .menu li {
     list-style: none;
 }
 
-.menu button {
+/* .menu button {
     background-color: var(--highlights);
     border: none;
     padding: 10px;
     transition: .4s;
     font-size: 20px;
     width: 150px
+} */
+.menu img{
+    width: 50px;
+    margin-left: 20px;
 }
-
 .menu button:hover {
     transition: .4s;
     transform: translateX(15px);
@@ -90,17 +94,29 @@ h1 {
     color: var(--pri);
     background-color: var(--highlights);
     border-radius: 200px;
+    margin: 20px;
+    padding: 20px 40px 20px 40px;
+    transition: .4s;
 }
-
+.cta p{
+    font-size: 30px;
+}
 .start::after {
     content: '↓';
     margin-left: 20px;
 }
 
 .start:hover {
-    backdrop-filter: drop-shadow(10px 10px 10px white);
+    box-shadow: 0 0 50px var(--highlights);
+    transition: .4s;
 }
-
+.cta{
+    display: flex;
+    flex-direction: column;
+    /* width: fit-content; */
+    justify-content: center;
+    align-items: center;
+}
 h2,
 h3 {
     text-transform: uppercase;
@@ -116,12 +132,11 @@ h2 {
 h3 {
     font-size: 50px
 }
-.cassidy>.background{
+/* .cassidy>.background{
     position: absolute;
     inset: 0;
     background: url("/assets/images/backgrounds/the-shootist.jpg") center/cover;
-    filter: blur(6px);
-    /* transform: scale(1.1); */
+    filter: blur(6px) saturate(0);
     z-index: -1;
     transition: .4s;
 }
@@ -129,8 +144,7 @@ h3 {
     position: absolute;
     inset: 0;
     background: url("/assets/images/backgrounds/TheParty-GTAVC3.jpg") center/cover;
-    filter: blur(6px);
-    /* transform: scale(1.1); */
+    filter: blur(6px) saturate(0);
     z-index: -1;
     transition: .4s;
 }
@@ -139,7 +153,6 @@ h3 {
     inset: 0;
     background: url("/assets/images/backgrounds/Claude-GTASA-WithCatalina.jpg") center/cover;
     filter: blur(6px);
-    /* transform: scale(1.1); */
     z-index: -1;
     transition: .4s;
 }
@@ -147,17 +160,25 @@ h3 {
     position: absolute;
     inset: 0;
     background: url("/assets/images/backgrounds/Claude-GTASA-WuZiMu.jpg") center/cover;
-    filter: blur(6px);
-    /* transform: scale(1.1); */
+    filter: blur(6px) saturate(0);
     z-index: -1;
     transition: .4s;
 }
+.leone>.background{
+    position: absolute;
+    inset: 0;
+    background: url("/assets/images/backgrounds/TheIntroduction-GTASA-SS15-SalvatoreLeone.jpg") center/cover;
+    filter: blur(6px) saturate(0);
+    z-index: -1;
+    transition: .4s;
+} */
 .cassidy,
 .donaldlove {
     display: flex;
     gap: 200px;
     overflow: hidden;
     position: relative;
+    text-align: justify;
 }
 
 .catalina,
@@ -168,6 +189,7 @@ h3 {
     flex-direction: row-reverse;
     gap: 200px;
     justify-content: center;
+    text-align: justify;
 }
 
 .catalina img,
@@ -176,7 +198,8 @@ h3 {
 .leone img,
 .cassidy img,
 .donaldlove img {
-    width: 600px
+    min-width: 500px;
+    padding: 0px;
 }
 
 .cta {
