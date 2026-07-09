@@ -2,7 +2,7 @@
 :root{
     --pri: #111516;
     --sec: #595e64;
-    --highlights: #e4bf3e;
+    --highlights: #FFB106;
     --text: #d8dddf;
 }
 body{
@@ -42,8 +42,8 @@ li{
     justify-content: center;
 }
 img{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     transition: .4s;
     border-radius: 35px;
     filter: saturate(0);
@@ -56,7 +56,7 @@ img:hover{
     transform: scale(1.1) translateY(-10px);
     cursor: pointer;
     transition: .4s;
-    box-shadow: 0px 0px 200px var(--highlights);
+    box-shadow: 0px 0px 90px var(--highlights);
     filter: saturate(1);
 }
 .gtavc{

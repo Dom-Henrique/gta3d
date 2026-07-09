@@ -6,13 +6,17 @@
     --highlights: #FFB106;
     --text: #d8dddf;
 }
-
+html{
+    scroll-behavior: smooth;
+    scrollbar-color: var(--highlights);
+}
 body {
     background-color: var(--pri);
     color: var(--text);
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
     font-size: 22px;
+    text-align: justify;
 }
 
 .menu {
@@ -99,7 +103,8 @@ h1 {
     transition: .4s;
 }
 .cta p{
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bolder;
 }
 .start::after {
     content: '↓';
@@ -108,6 +113,7 @@ h1 {
 
 .start:hover {
     box-shadow: 0 0 50px var(--highlights);
+    transform: translateY(-10px);
     transition: .4s;
 }
 .cta{
@@ -132,7 +138,7 @@ h2 {
 h3 {
     font-size: 50px
 }
-/* .cassidy>.background{
+.cassidy>.background{
     position: absolute;
     inset: 0;
     background: url("/assets/images/backgrounds/the-shootist.jpg") center/cover;
@@ -171,7 +177,7 @@ h3 {
     filter: blur(6px) saturate(0);
     z-index: -1;
     transition: .4s;
-} */
+}
 .cassidy,
 .donaldlove {
     display: flex;
@@ -199,6 +205,7 @@ h3 {
 .cassidy img,
 .donaldlove img {
     min-width: 500px;
+    min-height: 500px;
     padding: 0px;
 }
 
@@ -208,4 +215,52 @@ h3 {
 
 section img {
     width: 400px;
+}
+.dad-son>div, .cash{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+h4{
+    text-align: center;
+}
+.daniel-zero>div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    align-items: center;
+}
+.bully>figure{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+}
+.bully>figure>img{
+    height: 500px;
+    width: 700px;
+}
+/* p{
+    width: 70%;
+} */
+.manhunt>figure img{
+    width: 700px;
+    text-align: center;
+}
+.manhunt>img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.dad-son>div>img{
+    width: 1000px;
+}
+.daniel-zero img{
+    width: 500px;
+}
+.bully, .manhunt, .theories{
+    margin: 100px;
+}
+.bully h3, .manhunt h3, .theories h3{
+    text-align: center;
 }
