@@ -15,7 +15,7 @@ body {
     color: var(--text);
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
-    font-size: 22px;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
@@ -36,7 +36,6 @@ body {
 .menu li {
     list-style: none;
 }
-
 /* .menu button {
     background-color: var(--highlights);
     border: none;
@@ -136,47 +135,56 @@ h2 {
 }
 
 h3 {
-    font-size: 50px
+    font-size: 50px;
+    margin-bottom: 0;
 }
 .cassidy>.background{
     position: absolute;
     inset: 0;
-    background: url("../assets/images/backgrounds/the-shootist.jpg") center/cover;
+    background: url("../images/backgrounds/the-shootist.jpg") center/cover;
     filter: blur(6px) saturate(0);
     z-index: -1;
-    transition: .4s;
+    opacity: 30%;
 }
 .donaldlove>.background{
     position: absolute;
     inset: 0;
-    background: url("../assets/images/backgrounds/TheParty-GTAVC3.jpg") center/cover;
+    background: url("../images/backgrounds/TheParty-GTAVC3.jpg") center/cover;
     filter: blur(6px) saturate(0);
     z-index: -1;
-    transition: .4s;
+    opacity: 30%;
 }
 .catalina>.background{
     position: absolute;
     inset: 0;
-    background: url("../assets/images/backgrounds/Claude-GTASA-WithCatalina.jpg") center/cover;
-    filter: blur(6px);
+    background: url("../images/backgrounds/Claude-GTASA-WithCatalina.jpg") center/cover;
+    filter: blur(6px) saturate(0);
     z-index: -1;
-    transition: .4s;
+    opacity: 30%;
 }
 .claude>.background{
     position: absolute;
     inset: 0;
-    background: url("../assets/images/backgrounds/Claude-GTASA-WuZiMu.jpg") center/cover;
+    background: url("../images/backgrounds/Claude-GTASA-WuZiMu.jpg") center/cover;
     filter: blur(6px) saturate(0);
     z-index: -1;
-    transition: .4s;
+    opacity: 30%;
 }
 .leone>.background{
     position: absolute;
     inset: 0;
-    background: url("../assets/images/backgrounds/TheIntroduction-GTASA-SS15-SalvatoreLeone.jpg") center/cover;
+    background: url("../images/backgrounds/TheIntroduction-GTASA-SS15-SalvatoreLeone.jpg") center/cover;
     filter: blur(6px) saturate(0);
     z-index: -1;
-    transition: .4s;
+    opacity: 30%;
+}
+.kenrosenberg>.background{
+    position: absolute;
+    inset: 0;
+    background: url("../images/backgrounds/Catalina-GTAIII-RansomMoney.jpg") center/cover;
+    filter: blur(6px) saturate(0);
+    opacity: 30%;
+    z-index: -1;
 }
 .cassidy,
 .donaldlove {
@@ -184,7 +192,7 @@ h3 {
     gap: 200px;
     overflow: hidden;
     position: relative;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .catalina,
@@ -195,7 +203,8 @@ h3 {
     flex-direction: row-reverse;
     gap: 200px;
     justify-content: center;
-    text-align: justify;
+    /* text-align: justify; */
+    position: relative
 }
 
 .catalina img,
@@ -209,6 +218,20 @@ h3 {
     padding: 0px;
 }
 
+.catalina div:not(.background),
+.claude div:not(.background),
+.kenrosenberg div:not(.background),
+.leone div:not(.background){
+    margin-left: 100px;
+}
+
+.cassidy div:not(.background),
+.donaldlove div:not(.background){
+    margin-right: 100px;;
+}
+/* p{
+    margin: 0;
+} */
 .cta {
     margin: 100px;
 }
@@ -230,26 +253,39 @@ h4{
     gap: 50px;
     align-items: center;
 }
-.bully>figure{
+.bully>ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 0px;
     margin: 0 auto;
 }
-.bully>figure>img{
+.bully li{
+    list-style: none;
+    width: fit-content;
+}
+.bully>ul img{
     height: 500px;
     width: 700px;
+    transition: .4s;
+}
+.bully>ul img:hover{
+    filter: saturate(0);
+    opacity: 30%;
+    transition: .4s;
+    cursor: pointer;
 }
 /* p{
     width: 70%;
 } */
-.manhunt>figure img{
-    width: 700px;
-    text-align: center;
+.manhunt .content{
+    display: flex;
 }
-.manhunt>img{
-    aspect-ratio: 1/1;
+.manhunt .content>img{
+    float: right;
+    width: 500px;
+    margin-right: 10px;
+    aspect-ratio: 4/5;
     object-fit: cover;
 }
 .dad-son>div>img{
@@ -257,6 +293,7 @@ h4{
 }
 .daniel-zero img{
     width: 500px;
+    float: right;
 }
 .bully, .manhunt, .theories{
     margin: 100px;
