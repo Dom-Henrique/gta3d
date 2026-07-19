@@ -7,131 +7,199 @@
     <title>Grand Theft Auto: Vice City</title>
 
     <style>
-        body{
-            margin:0;
-            font-family:Arial, Helvetica, sans-serif;
-            background:#111;
-            color:#f5f5f5;
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: #f5f5f5;
         }
 
-        header{
-            background:linear-gradient(90deg,#000,#7a5c00,#d4af37,#7a5c00,#000);
-            text-align:center;
-            padding:30px;
-            color:white;
+        header {
+            background: linear-gradient(90deg, #000, #7a5c00, #d4af37, #7a5c00, #000);
+            text-align: center;
+            padding: 30px;
+            color: white;
         }
 
-        h1{
-            font-size:42px;
-            margin:0;
+        h1 {
+            font-size: 42px;
+            margin: 0;
         }
 
-        h2{
-            color:#FFD700;
-            border-bottom:2px solid #FFD700;
-            padding-bottom:5px;
+        h2 {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 5px;
         }
 
-        main{
-            max-width:900px;
-            margin:auto;
-            padding:30px;
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
         }
 
-        section{
-            background:#1b1b1b;
-            border:2px solid #d4af37;
-            border-radius:10px;
-            padding:20px;
-            margin-bottom:25px;
-            box-shadow:0 0 15px rgba(212,175,55,0.25);
+        section {
+            background: #1b1b1b;
+            border: 2px solid #d4af37;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
         }
 
-        p{
-            text-align:justify;
-            line-height:1.7;
+        p {
+            text-align: justify;
+            line-height: 1.7;
         }
 
-        ul{
-            line-height:1.8;
+        ul {
+            line-height: 1.8;
+        }
+
+        .menu {
+            display: flex;
+            background-color: var(--highlights);
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        .menu ul {
+            display: flex;
+            gap: 30px;
+            margin-right: 20px;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        /* .menu button {
+    background-color: var(--highlights);
+    border: none;
+    padding: 10px;
+    transition: .4s;
+    font-size: 20px;
+    width: 150px
+} */
+        .menu img {
+            width: 50px;
+            margin-left: 20px;
+        }
+
+        .menu button:hover {
+            transition: .4s;
+            transform: translateX(15px);
+            cursor: pointer;
+            filter: drop-shadow(var(--highlights) 0px 0px 10px);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: var(--pri);
+            transition: .4s;
+            font-weight: 900;
+        }
+
+        .menu a:hover {
+            color: var(--text);
+            transition: .4s;
+        }
+
+        menu::after {
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--text);
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Grand Theft Auto: Vice City</h1>
-</header>
+    <header>
+        <nav class="menu">
+            <a href="../index.html"><img src="../assets/images/gta-logos/rockstar-logo.png" alt="" class="rockstar"></a>
+            <ul>
+                <li><a href="gta3.html">GTA III</a></li>
+                <li><a href="gtavc.html">GTA VC</a></li>
+                <li><a href="gtasa.html">GTA SA</a></li>
+                <li><a href="bully.html">BULLY</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
+    <main>
+        <h1>Grand Theft Auto: Vice City</h1>
+        <section>
+            <h2>Sobre o jogo</h2>
 
-<section>
-<h2>Sobre o jogo</h2>
+            <p>
+                Grand Theft Auto: Vice City é um jogo eletrônico de ação e aventura em mundo aberto,
+                lançado em 29 de outubro de 2002 para PlayStation 2. Posteriormente, também foi lançado
+                para PC, Xbox e outras plataformas. O jogo foi desenvolvido pela Rockstar North e
+                publicado pela Rockstar Games, tornando-se um dos maiores sucessos da franquia Grand Theft Auto.
+            </p>
 
-<p>
-Grand Theft Auto: Vice City é um jogo eletrônico de ação e aventura em mundo aberto,
-lançado em 29 de outubro de 2002 para PlayStation 2. Posteriormente, também foi lançado
-para PC, Xbox e outras plataformas. O jogo foi desenvolvido pela Rockstar North e
-publicado pela Rockstar Games, tornando-se um dos maiores sucessos da franquia Grand Theft Auto.
-</p>
+            <p>
+                A história acontece no ano de 1986 em Vice City, uma cidade fictícia inspirada em Miami.
+                A ambientação reproduz a cultura da década de 1980, com carros esportivos, roupas chamativas,
+                prédios coloridos e uma trilha sonora composta por músicas famosas da época.
+            </p>
+        </section>
 
-<p>
-A história acontece no ano de 1986 em Vice City, uma cidade fictícia inspirada em Miami.
-A ambientação reproduz a cultura da década de 1980, com carros esportivos, roupas chamativas,
-prédios coloridos e uma trilha sonora composta por músicas famosas da época.
-</p>
-</section>
+        <section>
 
-<section>
+            <h2>História</h2>
 
-<h2>História</h2>
+            <p>
+                O protagonista é Tommy Vercetti, um criminoso que acaba de sair da prisão após cumprir
+                quinze anos de pena. Enviado para Vice City por seu antigo chefe, Sonny Forelli,
+                Tommy participa de uma negociação de drogas que acaba dando errado.
+                Após perder o dinheiro e a mercadoria, ele inicia uma busca para descobrir os responsáveis
+                pelo ataque e recuperar tudo o que foi perdido.
+            </p>
 
-<p>
-O protagonista é Tommy Vercetti, um criminoso que acaba de sair da prisão após cumprir
-quinze anos de pena. Enviado para Vice City por seu antigo chefe, Sonny Forelli,
-Tommy participa de uma negociação de drogas que acaba dando errado.
-Após perder o dinheiro e a mercadoria, ele inicia uma busca para descobrir os responsáveis
-pelo ataque e recuperar tudo o que foi perdido.
-</p>
+            <p>
+                Ao longo da aventura, Tommy conquista propriedades, faz alianças com diferentes personagens
+                e constrói seu próprio império criminoso, tornando-se uma das figuras mais poderosas da cidade.
+            </p>
 
-<p>
-Ao longo da aventura, Tommy conquista propriedades, faz alianças com diferentes personagens
-e constrói seu próprio império criminoso, tornando-se uma das figuras mais poderosas da cidade.
-</p>
+        </section>
 
-</section>
+        <section>
 
-<section>
+            <h2>Jogabilidade</h2>
 
-<h2>Jogabilidade</h2>
+            <ul>
+                <li>Exploração livre de uma grande cidade em mundo aberto.</li>
+                <li>Missões principais que desenvolvem a história.</li>
+                <li>Missões secundárias e atividades opcionais.</li>
+                <li>Grande variedade de carros, motos, barcos e helicópteros.</li>
+                <li>Diversos tipos de armas.</li>
+                <li>Compra de propriedades que geram renda para o jogador.</li>
+                <li>Sistema de procurado pela polícia conforme os crimes cometidos.</li>
+            </ul>
 
-<ul>
-<li>Exploração livre de uma grande cidade em mundo aberto.</li>
-<li>Missões principais que desenvolvem a história.</li>
-<li>Missões secundárias e atividades opcionais.</li>
-<li>Grande variedade de carros, motos, barcos e helicópteros.</li>
-<li>Diversos tipos de armas.</li>
-<li>Compra de propriedades que geram renda para o jogador.</li>
-<li>Sistema de procurado pela polícia conforme os crimes cometidos.</li>
-</ul>
+        </section>
 
-</section>
+        <section>
 
-<section>
+            <h2>Curiosidades</h2>
 
-<h2>Curiosidades</h2>
+            <p>
+                GTA: Vice City foi um dos jogos mais vendidos de sua época e é lembrado até hoje por sua
+                excelente trilha sonora, personagens marcantes e ambientação inspirada na década de 1980.
+                Seu sucesso ajudou a consolidar a série Grand Theft Auto como uma das franquias mais populares
+                da história dos videogames.
+            </p>
 
-<p>
-GTA: Vice City foi um dos jogos mais vendidos de sua época e é lembrado até hoje por sua
-excelente trilha sonora, personagens marcantes e ambientação inspirada na década de 1980.
-Seu sucesso ajudou a consolidar a série Grand Theft Auto como uma das franquias mais populares
-da história dos videogames.
-</p>
+        </section>
 
-</section>
-
-</main>
+    </main>
 
 </body>
 
