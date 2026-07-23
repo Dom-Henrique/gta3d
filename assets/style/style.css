@@ -301,3 +301,46 @@ h4{
 .bully h3, .manhunt h3, .theories h3{
     text-align: center;
 }
+
+.grid-manhunt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    /* margin-bottom: 100px; */
+    margin-top: 100px;
+}
+.grid-manhunt>div{
+    min-width: 200px;
+    background-color: #ffb0067c;
+    color: var(--pri);
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    border: 4px var(--highlights) solid;
+    align-items: center;
+    height: fit-content;
+    grid-auto-flow: dense;
+}
+.grid-manhunt>div:hover{
+    box-shadow: 0px 0px 50px var(--highlights);
+    transform: translateY(50px);
+    cursor: pointer;
+    transition: .4s;
+}
+.grid-manhunt>div img{
+    min-width: 700px;
+}
+.grid-manhunt>div figure{
+    width: fit-content;
+}
+
+.banner-cash{
+    width: 1920;
+    height: 760px;
+    background-image: url("https://static.wikia.nocookie.net/manhuntgame/images/0/0c/JamesEarlCash-MH-PreRenderedCutscene-BornAgain.png/revision/latest/scale-to-width-down/1000?cb=20250928194858");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
