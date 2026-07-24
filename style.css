@@ -1,0 +1,22 @@
+body{
+    color: white;
+    background-color: black;
+    background-image: url();
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.JimmyHopkins {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+img {
+    width: 200px;
+    height: auto;
+    margin-right: 100px;
+    border-radius: 250%;
+object-fit: cover;
+
+}
