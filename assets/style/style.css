@@ -6,10 +6,12 @@
     --highlights: #FFB106;
     --text: #d8dddf;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     scrollbar-color: var(--highlights);
 }
+
 body {
     background-color: var(--pri);
     color: var(--text);
@@ -36,6 +38,7 @@ body {
 .menu li {
     list-style: none;
 }
+
 /* .menu button {
     background-color: var(--highlights);
     border: none;
@@ -44,10 +47,11 @@ body {
     font-size: 20px;
     width: 150px
 } */
-.menu img{
+.menu img {
     width: 50px;
     margin-left: 20px;
 }
+
 .menu button:hover {
     transition: .4s;
     transform: translateX(15px);
@@ -83,9 +87,20 @@ menu::after {
     margin-top: 0;
     width: 100%;
     height: 1000px;
-    background-color: var(--text);
+    /* background-color: var(--text); */
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.backgroundBanner {
+    background-image: url("/assets/images/backgrounds/games-banners.gif");
+    overflow: hidden;
+    filter: saturate(0);
+    opacity: 50%;
+    z-index: -1;
+    position: absolute;
 }
 
 h1 {
@@ -101,10 +116,12 @@ h1 {
     padding: 20px 40px 20px 40px;
     transition: .4s;
 }
-.cta p{
+
+.cta p {
     font-size: 25px;
     font-weight: bolder;
 }
+
 .start::after {
     content: '↓';
     margin-left: 20px;
@@ -115,13 +132,15 @@ h1 {
     transform: translateY(-10px);
     transition: .4s;
 }
-.cta{
+
+.cta {
     display: flex;
     flex-direction: column;
     /* width: fit-content; */
     justify-content: center;
     align-items: center;
 }
+
 h2,
 h3 {
     text-transform: uppercase;
@@ -138,7 +157,8 @@ h3 {
     font-size: 50px;
     margin-bottom: 0;
 }
-.cassidy>.background{
+
+.cassidy>.background {
     position: absolute;
     inset: 0;
     background: url("../images/backgrounds/the-shootist.jpg") center/cover;
@@ -146,7 +166,8 @@ h3 {
     z-index: -1;
     opacity: 30%;
 }
-.donaldlove>.background{
+
+.donaldlove>.background {
     position: absolute;
     inset: 0;
     background: url("../images/backgrounds/TheParty-GTAVC3.jpg") center/cover;
@@ -154,7 +175,8 @@ h3 {
     z-index: -1;
     opacity: 30%;
 }
-.catalina>.background{
+
+.catalina>.background {
     position: absolute;
     inset: 0;
     background: url("../images/backgrounds/Claude-GTASA-WithCatalina.jpg") center/cover;
@@ -162,7 +184,8 @@ h3 {
     z-index: -1;
     opacity: 30%;
 }
-.claude>.background{
+
+.claude>.background {
     position: absolute;
     inset: 0;
     background: url("../images/backgrounds/Claude-GTASA-WuZiMu.jpg") center/cover;
@@ -170,7 +193,8 @@ h3 {
     z-index: -1;
     opacity: 30%;
 }
-.leone>.background{
+
+.leone>.background {
     position: absolute;
     inset: 0;
     background: url("../images/backgrounds/TheIntroduction-GTASA-SS15-SalvatoreLeone.jpg") center/cover;
@@ -178,7 +202,8 @@ h3 {
     z-index: -1;
     opacity: 30%;
 }
-.kenrosenberg>.background{
+
+.kenrosenberg>.background {
     position: absolute;
     inset: 0;
     background: url("../images/backgrounds/Catalina-GTAIII-RansomMoney.jpg") center/cover;
@@ -186,6 +211,7 @@ h3 {
     opacity: 30%;
     z-index: -1;
 }
+
 .cassidy,
 .donaldlove {
     display: flex;
@@ -221,14 +247,16 @@ h3 {
 .catalina div:not(.background),
 .claude div:not(.background),
 .kenrosenberg div:not(.background),
-.leone div:not(.background){
+.leone div:not(.background) {
     margin-left: 100px;
 }
 
 .cassidy div:not(.background),
-.donaldlove div:not(.background){
-    margin-right: 100px;;
+.donaldlove div:not(.background) {
+    margin-right: 100px;
+    ;
 }
+
 /* p{
     margin: 0;
 } */
@@ -239,77 +267,96 @@ h3 {
 section img {
     width: 400px;
 }
-.dad-son>div, .cash{
+
+.dad-son>div,
+.cash {
     display: flex;
     gap: 50px;
     align-items: center;
 }
-h4{
+
+h4 {
     text-align: center;
 }
-.daniel-zero>div{
+
+.daniel-zero>div {
     display: flex;
     flex-direction: row-reverse;
     gap: 50px;
     align-items: center;
 }
-.bully>ul{
+
+.bully>ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 0px;
     margin: 0 auto;
 }
-.bully li{
+
+.bully li {
     list-style: none;
     width: fit-content;
 }
-.bully>ul img{
+
+.bully>ul img {
     height: 500px;
     width: 700px;
     transition: .4s;
 }
-.bully>ul img:hover{
+
+.bully>ul img:hover {
     filter: saturate(0);
     opacity: 30%;
     transition: .4s;
     cursor: pointer;
 }
+
 /* p{
     width: 70%;
 } */
-.manhunt .content{
+.manhunt .content {
     display: flex;
 }
-.manhunt .content>img{
+
+.manhunt .content>img {
     float: right;
     width: 500px;
     margin-right: 10px;
     aspect-ratio: 4/5;
     object-fit: cover;
 }
-.dad-son>div>img{
+
+.dad-son>div>img {
     width: 1000px;
 }
-.daniel-zero img{
+
+.daniel-zero img {
     width: 500px;
     float: right;
 }
-.bully, .manhunt, .theories{
+
+.bully,
+.manhunt,
+.theories {
     margin: 100px;
 }
-.bully h3, .manhunt h3, .theories h3{
+
+.bully h3,
+.manhunt h3,
+.theories h3 {
     text-align: center;
 }
 
-.grid-manhunt{
+.grid-manhunt {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     /* margin-bottom: 100px; */
     margin-top: 100px;
 }
-.grid-manhunt>div{
+
+.grid-manhunt>div {
     min-width: 200px;
     background-color: #ffb0067c;
     color: var(--pri);
@@ -323,20 +370,23 @@ h4{
     height: fit-content;
     grid-auto-flow: dense;
 }
-.grid-manhunt>div:hover{
+
+.grid-manhunt>div:hover {
     box-shadow: 0px 0px 50px var(--highlights);
     transform: translateY(50px);
     cursor: pointer;
     transition: .4s;
 }
-.grid-manhunt>div img{
+
+.grid-manhunt>div img {
     min-width: 700px;
 }
-.grid-manhunt>div figure{
+
+.grid-manhunt>div figure {
     width: fit-content;
 }
 
-.banner-cash{
+.banner-cash {
     width: 1920;
     height: 760px;
     background-image: url("https://static.wikia.nocookie.net/manhuntgame/images/0/0c/JamesEarlCash-MH-PreRenderedCutscene-BornAgain.png/revision/latest/scale-to-width-down/1000?cb=20250928194858");
