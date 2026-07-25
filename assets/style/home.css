@@ -64,3 +64,26 @@ img:hover{
     object-fit: cover;
     object-position: center;
 }
+
+@media (min-width: 430px) and (max-width: 767px){
+    body{
+        height: 100%;
+    }
+    ul{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: none;
+        height: min-content;
+    }
+    li{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    img:hover{
+        transform: none;
+    }
+}
