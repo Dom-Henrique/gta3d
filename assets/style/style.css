@@ -27,6 +27,7 @@ body {
     align-items: center;
     padding: 10px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .menu ul {
@@ -254,7 +255,6 @@ h3 {
 .cassidy div:not(.background),
 .donaldlove div:not(.background) {
     margin-right: 100px;
-    ;
 }
 
 /* p{
@@ -393,4 +393,86 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (min-width: 430px) and (max-width: 765px) {
+    body {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header {
+        display: none;
+    }
+
+    .bully>ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bully li {
+        width: fit-content;
+    }
+
+    .bully>ul img {
+        height: 100%;
+        width: 100%;
+        transition: .4s;
+    }
+
+    .bully,
+    .manhunt,
+    .theories {
+        margin: 0px;
+    }
+
+    .cassidy,
+    .donaldlove,
+    .catalina,
+    .claude,
+    .kenrosenberg,
+    .leone {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px
+    }
+
+    .catalina div:not(.background),
+    .claude div:not(.background),
+    .kenrosenberg div:not(.background),
+    .leone div:not(.background) {
+        margin-left: 0px;
+    }
+
+    .cassidy div:not(.background),
+    .donaldlove div:not(.background) {
+        margin-right: 0px;
+    }
+
+    .background {
+        height: 100%;
+    }
+
+    .catalina img,
+    .claude img,
+    .kenrosenberg img,
+    .leone img,
+    .cassidy img,
+    .donaldlove img {
+        min-width: 100px;
+        min-height: 100px;
+        padding: 0px;
+    }
+
+    .grid-manhunt {
+        grid-template-columns: repeat(1, 1fr);
+        /* margin-bottom: 100px; */
+        margin-top: 0px;
+        width: 80%;
+        justify-items: center;
+    }
+
+    .grid-manhunt>div img {
+        width: 100%;
+    }
 }
