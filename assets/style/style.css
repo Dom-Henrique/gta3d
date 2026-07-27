@@ -383,7 +383,7 @@ h4 {
 }
 
 .grid-manhunt>div figure {
-    width: fit-content;
+    width: 100%;
 }
 
 .banner-cash {
@@ -459,20 +459,64 @@ h4 {
     .leone img,
     .cassidy img,
     .donaldlove img {
-        min-width: 100px;
+        width: 100%;
         min-height: 100px;
         padding: 0px;
+    }
+
+    .catalina h3,
+    .claude h3,
+    .kenrosenberg h3,
+    .leone h3,
+    .cassidy h3,
+    .donaldlove h3 {
+        margin: 0;
     }
 
     .grid-manhunt {
         grid-template-columns: repeat(1, 1fr);
         /* margin-bottom: 100px; */
         margin-top: 0px;
-        width: 80%;
+        width: 70%;
         justify-items: center;
     }
 
-    .grid-manhunt>div img {
+    .grid-manhunt>div {
         width: 100%;
+    }
+
+    .grid-manhunt>div>figure{
+        width: 100%;
+    }
+
+    .bully h3,
+    .bully-manhunt {
+        margin: 0;
+    }
+
+    .bully h3 {
+        font-size: 1.5rem
+    }
+
+    .banner-cash {
+        background-image: url("https://static.wikia.nocookie.net/manhuntgame/images/0/0b/JamesEarlCash-MH-PreRenderedCutscene-FuelledbyHate.png/revision/latest/scale-to-width-down/1000?cb=20250928194902");
+        aspect-ratio: 4/5;
+        object-fit: cover;
+        margin: 0;
+        width: 100%
+    }
+
+    .dad-son>div,
+    .daniel-zero>div {
+        flex-direction: column;
+    }
+
+    .dad-son>div>img {
+        width: 400px;
+    }
+
+    iframe {
+        width: 480px;
+        height: 270px;
     }
 }
