@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    /* height: 100vh; */
     background-color: var(--pri);
     color: var(--text);
     margin: 0 auto;
@@ -240,9 +241,21 @@ h3 {
 .leone img,
 .cassidy img,
 .donaldlove img {
-    min-width: 500px;
-    min-height: 500px;
+    /* max-width: 500px;
+    max-height: 500px; */
     padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.catalina>figure,
+.claude>figure,
+.kenrosenberg>figure,
+.leone>figure,
+.cassidy>figure,
+.donaldlove>figure {
+    width: fit-content;
+    height: 100%;
 }
 
 .catalina div:not(.background),
@@ -265,14 +278,8 @@ h3 {
 }
 
 section img {
-    width: 400px;
-}
-
-.dad-son>div,
-.cash {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+    max-width: 400px;
+    width: 100%;
 }
 
 h4 {
@@ -281,17 +288,18 @@ h4 {
 
 .daniel-zero>div {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 50px;
     align-items: center;
 }
 
 .bully>ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     align-items: center;
     padding: 0px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .bully li {
@@ -300,8 +308,8 @@ h4 {
 }
 
 .bully>ul img {
-    height: 500px;
-    width: 700px;
+    /* height: 500px; */
+    width: 100%;
     transition: .4s;
 }
 
@@ -327,10 +335,6 @@ h4 {
     object-fit: cover;
 }
 
-.dad-son>div>img {
-    width: 1000px;
-}
-
 .daniel-zero img {
     width: 500px;
     float: right;
@@ -350,10 +354,13 @@ h4 {
 
 .grid-manhunt {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 50px;
     /* margin-bottom: 100px; */
     margin-top: 100px;
+    width: 100%;
+    place-items: center;
+    justify-content: space-between;
 }
 
 .grid-manhunt>div {
@@ -366,8 +373,9 @@ h4 {
     flex-direction: column;
     transition: .4s;
     border: 4px var(--highlights) solid;
-    align-items: center;
+    place-items: center;
     height: fit-content;
+    align-items: center;
     grid-auto-flow: dense;
 }
 
@@ -378,27 +386,28 @@ h4 {
     transition: .4s;
 }
 
-.grid-manhunt>div img {
-    min-width: 700px;
+.locals {
+    width: fit-content
 }
 
-.grid-manhunt>div figure {
+/* .locals img {
     width: 100%;
-}
+} */
 
 .banner-cash {
     width: 1920;
     height: 760px;
-    background-image: url("https://static.wikia.nocookie.net/manhuntgame/images/0/0c/JamesEarlCash-MH-PreRenderedCutscene-BornAgain.png/revision/latest/scale-to-width-down/1000?cb=20250928194858");
+    background-image: url("https://static.wikia.nocookie.net/manhuntgame/images/0/0b/JamesEarlCash-MH-PreRenderedCutscene-FuelledbyHate.png/revision/latest/scale-to-width-down/1000?cb=20250928194902");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-@media (min-width: 430px) and (max-width: 765px) {
+@media (min-width: 330px) and (max-width: 765px) {
     body {
         width: 100%;
-        overflow: hidden;
+        /* height: 100vh; */
+        /* overflow: hidden; */
     }
 
     header {
@@ -460,6 +469,7 @@ h4 {
     .cassidy img,
     .donaldlove img {
         width: 100%;
+        /* max-width: 480px; */
         min-height: 100px;
         padding: 0px;
     }
@@ -485,7 +495,7 @@ h4 {
         width: 100%;
     }
 
-    .grid-manhunt>div>figure{
+    .grid-manhunt>div>figure {
         width: 100%;
     }
 
@@ -499,7 +509,6 @@ h4 {
     }
 
     .banner-cash {
-        background-image: url("https://static.wikia.nocookie.net/manhuntgame/images/0/0b/JamesEarlCash-MH-PreRenderedCutscene-FuelledbyHate.png/revision/latest/scale-to-width-down/1000?cb=20250928194902");
         aspect-ratio: 4/5;
         object-fit: cover;
         margin: 0;
@@ -512,11 +521,15 @@ h4 {
     }
 
     .dad-son>div>img {
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
     }
 
     iframe {
-        width: 480px;
-        height: 270px;
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 16/9;
+        width: 100%;
+        border: solid 2px var(--highlights)
     }
 }
