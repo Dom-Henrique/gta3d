@@ -23,7 +23,7 @@ body {
     color: var(--text);
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     /* text-align: justify; */
     overflow-x: hidden;
 }
@@ -104,11 +104,15 @@ menu::after {
 
 .backgroundBanner {
     background-image: url("/assets/images/backgrounds/games-banners.gif");
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
     filter: saturate(0);
-    opacity: 50%;
+    opacity: 20%;
     z-index: -1;
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -378,7 +382,6 @@ h4 {
 }
 
 .bully h3,
-.manhunt h3,
 .theories h3 {
     text-align: center;
 }
@@ -396,14 +399,14 @@ h4 {
 .grid-manhunt>div {
     width: 100%;
     /* max-width: 320px; */
-    background-color: var(--highlights);
+    background-color: #ffb006a8;
     color: var(--pri);
     border-radius: 25px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     transition: .4s;
-    border: 4px var(--pri) solid;
+    /* border: 4px var(--pri) solid; */
     align-items: center;
     height: 100%;
     box-sizing: border-box;
@@ -436,7 +439,8 @@ h4 {
 
 iframe {
     border: solid 2px var(--highlights);
-    width: 100%;
+    width: 85%;
+    height: 900px;
 }
 
 .manhunt>.background {
@@ -448,9 +452,68 @@ iframe {
     opacity: 50%;
 }
 
-.manhunt{
+.manhunt {
     position: relative;
     padding: 100px;
+}
+
+footer {
+    background-color: #292b2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>h4>a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer div a {
+    color: #d8dddf8f;
+    text-decoration: none;
+    transition: .4s;
+}
+
+footer div a:hover,
+footer li:hover {
+    color: var(--text);
+    transition: .4s;
+}
+
+footer li {
+    list-style: none;
+    color: #d8dddf8f;
+}
+
+footer>div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.credits>p,
+.credits ul,
+.footer-nav>p,
+.footer-nav ul,
+.wiki>p,
+.wiki ul,
+.technologies>p,
+.technologies ul {
+    margin-top: 0;
+}
+
+li::before {
+    content: "★";
+    color: var(--highlights);
+    /* position: absolute; */
+    left: 0;
 }
 
 @media (min-width: 766px) and (max-width: 1100px) {

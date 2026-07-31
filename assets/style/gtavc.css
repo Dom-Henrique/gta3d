@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --pri: #12121C;
+    --sec: #595e64;
+    --highlights: #FFB106;
+    --text: #d8dddf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgb(15, 5, 40),
+            rgb(228, 66, 131)),
+        url("../images/vice-city-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu {
+    display: flex;
+    background-color: var(--highlights);
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+/* .menu button {
+    background-color: var(--highlights);
+    border: none;
+    padding: 10px;
+    transition: .4s;
+    font-size: 20px;
+    width: 150px
+} */
+.menu img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.menu button:hover {
+    transition: .4s;
+    transform: translateX(15px);
+    cursor: pointer;
+    filter: drop-shadow(var(--highlights) 0px 0px 10px);
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--pri);
+    transition: .4s;
+    font-weight: 900;
+}
+
+.menu a:hover {
+    color: var(--text);
+    transition: .4s;
+}
+
+menu::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--text);
+}
+
+/* CONTAINER PRINCIPAL */
+
+main {
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 25px;
+
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+
+    text-align: center;
+
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 3.5rem;
+
+    text-transform: uppercase;
+
+    color: #ff5de9;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 10px #ff00cc,
+        0 0 20px #ff00cc,
+        0 0 40px #ff00cc;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+/* SEÇÕES */
+
+section {
+
+    background:
+        rgba(10, 10, 35, 0.75);
+
+    border: 2px solid rgba(255, 80, 220, 0.5);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 200, 0.3);
+
+    transition: 0.3s;
+
+}
+
+
+section:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 200, 0.7);
+
+}
+
+
+
+/* TÍTULOS */
+
+h2 {
+
+    font-family: "Orbitron", sans-serif;
+
+    color: #00eaff;
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 10px #00eaff;
+
+}
+
+
+h3 {
+
+    color: #ff8cfa;
+
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 0 10px #ff00cc;
+
+}
+
+
+
+/* TEXTOS */
+
+
+p {
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+    color: #eeeeff;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+/* LISTAS */
+
+
+ul {
+
+    margin-left: 25px;
+
+}
+
+
+li {
+
+    margin-bottom: 12px;
+
+    color: #ddd;
+
+}
+
+
+li::marker {
+
+    color: #ff4fd8;
+
+}
+
+
+
+/* HISTÓRIA */
+
+
+.phase {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-left:
+
+        4px solid #ff00cc;
+
+    background:
+
+        rgba(255, 255, 255, 0.05);
+
+    border-radius: 10px;
+
+}
+
+
+
+/* PERSONAGENS */
+
+
+.characters-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+}
+
+
+
+.character-card {
+
+    background:
+
+        linear-gradient(145deg,
+
+            rgba(255, 0, 180, 0.2),
+
+            rgba(0, 200, 255, 0.15));
+
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    overflow: hidden;
+
+    transition: .3s;
+
+}
+
+
+
+.character-card:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+
+        0 0 25px #ff00cc;
+
+}
+
+
+
+.character-info {
+
+    padding: 25px;
+
+}
+
+
+
+/* GALERIA */
+
+
+.gallery-grid {
+
+    min-height: 200px;
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+.note {
+
+    text-align: center;
+
+    color: #aaa;
+
+    font-style: italic;
+
+}
+
+li::before {
+    content: "★";
+    color: var(--highlights);
+    /* position: absolute; */
+    left: 0;
+}
+
+
+
+/* EFEITO DE NEON */
+
+.neon {
+
+    animation:
+
+        neonPulse 2s infinite alternate;
+
+}
+
+footer {
+    background-color: #292b2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>h4>a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer div a {
+    color: #d8dddf8f;
+    text-decoration: none;
+    transition: .4s;
+}
+
+footer div a:hover,
+footer li:hover {
+    color: var(--text);
+    transition: .4s;
+}
+
+footer li {
+    list-style: none;
+    color: #d8dddf8f;
+}
+
+footer>div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.credits>p,
+.credits ul,
+.footer-nav>p,
+.footer-nav ul,
+.wiki>p,
+.wiki ul,
+.technologies>p,
+.technologies ul {
+    margin-top: 0;
+}
+
+@keyframes neonPulse {
+
+    from {
+
+        text-shadow:
+
+            0 0 10px #ff00cc;
+
+    }
+
+
+    to {
+
+        text-shadow:
+
+            0 0 30px #00eaff;
+
+    }
+
+}
+
+
+
+/* RESPONSIVIDADE */
+
+
+@media(max-width:700px) {
+
+
+    h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+    section {
+
+        padding: 20px;
+
+    }
+
+
+    p {
+
+        font-size: .95rem;
+
+    }
+
+
+}
