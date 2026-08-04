@@ -194,11 +194,6 @@ h3 {
 
 }
 
-
-
-/* TEXTOS */
-
-
 p {
 
     line-height: 1.8;
@@ -316,12 +311,19 @@ li::marker {
 
 
 .character-info {
-
+    
     padding: 25px;
 
 }
 
-
+.character-info figure{
+    width: 100%;
+}
+.character-info img{
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
 
 /* GALERIA */
 
