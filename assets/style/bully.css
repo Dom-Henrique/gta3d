@@ -499,33 +499,162 @@ menu::after {
   background-color: var(--text);
 }
 
-@media (max-width: 40rem) {
-  header {
-    padding: 3.5rem 1rem 4.5rem;
-  }
+@media (min-width:768px) and (max-width:1024px){
 
-  .intro {
-    margin-top: -2.2rem;
-    padding: 1.3rem 1.2rem;
-  }
+    header{
+        padding:3rem 2rem;
+    }
 
-  #gameplay {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
+    header>img{
+        width:240px;
+    }
 
-  .personagem::after {
-    right: -2.3rem;
-    font-size: 0.56rem;
-  }
+    .intro{
+        max-width:90%;
+    }
 
-  #historia article {
-    padding-left: 2.6rem;
-  }
+    main{
+        padding:0 2rem;
+    }
+
+    .menu{
+        padding:12px 24px;
+    }
+
+    .menu ul{
+        gap:20px;
+        margin-right:0;
+    }
+
+    .lista-personagens{
+        grid-template-columns:repeat(2,1fr);
+        gap:1.8rem;
+    }
+
+    #gameplay{
+        margin-left:-2rem;
+        margin-right:-2rem;
+        padding:3rem 2rem;
+    }
+
+    footer>div{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:40px;
+        text-align:center;
+    }
+
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .personagem {
-    transition: none;
-  }
+@media (max-width:767px){
+    .menu{
+      display: none;
+    }
+    header{
+        padding:2.5rem 1rem;
+    }
+
+    header>img{
+        width:180px;
+    }
+
+    .eyebrow{
+        margin-top:2rem;
+        font-size:.7rem;
+        letter-spacing:.18em;
+        text-align:center;
+    }
+
+    .intro{
+        max-width:100%;
+        margin-top:-1.5rem;
+        padding:1.2rem;
+        transform:none;
+    }
+
+    main{
+        padding:0 1rem;
+    }
+
+    .menu{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .menu img{
+        margin-left:0;
+    }
+
+    .menu ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin:0;
+        padding:0;
+    }
+
+    section{
+        padding:3rem 0 2rem;
+    }
+
+    section h2{
+        font-size:1.7rem;
+    }
+
+    .lista-personagens{
+        grid-template-columns:1fr;
+        gap:1.5rem;
+    }
+
+    .personagem{
+        transform:none !important;
+    }
+
+    .personagem::after{
+        right:-1.6rem;
+        font-size:.55rem;
+    }
+
+    .personagem figure img{
+        width:110px;
+        height:110px;
+    }
+
+    #gameplay{
+        margin:3rem -1rem 0;
+        padding:2.5rem 1rem;
+    }
+
+    #historia article{
+        padding:1.2rem 1rem 1.2rem 2.2rem;
+    }
+
+    #historia article h3{
+        font-size:1.3rem;
+    }
+
+    #historia ul li{
+        font-size:.9rem;
+    }
+
+    footer{
+        padding:40px 20px;
+    }
+
+    footer>div{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:35px;
+    }
+
+    footer h4{
+        font-size:1.4rem;
+    }
+
+    footer ul{
+        padding:0;
+    }
+
 }
